@@ -1,0 +1,18 @@
+import numpy as np
+P = np.array([[1,7],[2,1],[3,2]])
+print(P)
+Q = np.array([[1,1],[1,-1],[1,0]])
+print(Q)
+C1 = np.add(P,Q)
+print(C1)
+C2 = np.subtract(P,Q)
+print(C2)
+R = np.array([[1,3,1],[1,0,1]])
+C3 = np.dot(P,R)
+print(C3)
+#determinant
+det = np.linalg.det(C3)
+print(det)
+M = np.array([[1,-1],[2,3]])
+inv = np.linalg.inv(M)
+print(inv)
