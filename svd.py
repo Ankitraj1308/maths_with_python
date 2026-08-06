@@ -8,7 +8,20 @@ b = np.zeros((3,4))
 b[:,:-1]=sd
 sigma = b
 svd = np.dot(np.dot(u,sigma),vh)
+# print(u)
+# print(sigma)
+# print(vh)
+# print(svd)
+
+# Low rank approximation
+
+s = [6.7509,1.1734,0]
+sd = np.diag(s)
+b = np.zeros((3,4))
+b[:,:-1]=sd
+sigma = b
+A2 = np.dot(np.dot(u,sigma),vh)
 print(u)
 print(sigma)
 print(vh)
-print(svd)
+print(A2)
